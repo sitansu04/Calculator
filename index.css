@@ -1,0 +1,85 @@
+body{
+    background-image: url("https://slidechef.net/wp-content/uploads/2021/10/Free-Google-Slides-Math-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.calculator {
+  width: 400px;
+  height: 650px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  margin: 100px auto;
+}
+
+.display {
+  height: 150px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 72px;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: display-glow 1s ease-in-out infinite alternate;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+button {
+  height: 80px;
+  width: 80px;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  animation: button-glow 1s ease-in-out infinite alternate;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button.clear {
+  background-color: #f44336;
+  color: #fff;
+}
+
+button.operator {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+button.equals {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+@keyframes display-glow {
+  from {
+    box-shadow: 0 0 20px #ddd;
+  }
+  to {
+    box-shadow: 0 0 40 px #ddd;
+  }
+}
+
+@keyframes button-glow {
+  from {
+    box-shadow: 0 0 20px #ddd;
+  }
+  to {
+    box-shadow: 0 0 40px #ddd;
+  }
+}
